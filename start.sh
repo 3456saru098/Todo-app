@@ -8,7 +8,7 @@ pip install -r requirements.txt
 
 # Step 3: Set Flask environment
 export FLASK_ENV=production
-export FLASK_APP=application.py  # change if your main file is different
+export FLASK_APP=application.py
 
-# Step 4: Run Flask
-python -m flask run --host=0.0.0.0 --port=8080
+# Step 4: Run Flask on Railway port
+flask run --host=0.0.0.0 --port=$PORT
